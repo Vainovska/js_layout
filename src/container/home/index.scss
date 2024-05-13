@@ -1,5 +1,4 @@
 @use '../../style/index.scss' as index;
-
 .title {
   font-size: 24px;
   color: black;
@@ -11,15 +10,15 @@
 }
 .post {
   padding: 12px;
-  border-radius: 10px;
   background-color: #f7f7f7;
-  border: 1px solid #f7f7f7;
+  border-bottom: 1px solid #000000;
   display: flex;
   flex-direction: column;
   gap: 12px;
   &--viewed {
     background-color: transparent;
     border-color: #e6e6e6;
+    border-bottom: 1px solid #888888;
     .post__info {
       color: #888888;
     }
@@ -33,25 +32,20 @@
   display: flex;
   gap: 8px;
 }
-.post__date {
-  color: #888888;
-  font-size: 14px;
-}
+
 .post__info {
   font-size: 16px;
   line-height: 1.4em;
   color: black;
 }
-.post__category {
-  padding: 8px 12px;
-  font-size: 12px;
-  border-radius: 50px;
-  &--1 {
-    color: #f46f17;
-    background-color: #f7e9e1;
-  }
-  &--2 {
-    color: #ef5da8;
-    background-color: #f6e8ef;
-  }
+.bottomButton {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px;
+  width: 100%;
+  background-color: #f46f17;
+  color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #f7f7f7;
 }
