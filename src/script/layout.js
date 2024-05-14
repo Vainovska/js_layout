@@ -33,3 +33,19 @@ export const createHeader = () => {
   })
   return header
 }
+const TOP_BUTTON_LIST = [
+  { text: 'База знань', viewed: true },
+  { text: 'Інформація', viewed: false },
+]
+export const createTopButton = () => {
+  const div = createElement('div', 'button_list')
+  TOP_BUTTON_LIST.forEach((params) => {
+    const top = createElement(
+      'div',
+      params.viewed ? 'button post--viewed' : 'button post',
+    )
+    top.innerText = params.text
+    div.insertAdjacentElement('beforeend', top)
+  })
+  return div
+}

@@ -8,14 +8,18 @@
   flex-direction: column;
   gap: 12px;
 }
+.button_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
 .post {
   padding: 12px;
   background-color: #f7f7f7;
   border-bottom: 1px solid #000000;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+
   &--viewed {
+    padding: 12px;
     background-color: transparent;
     border-color: #e6e6e6;
     border-bottom: 1px solid #888888;
